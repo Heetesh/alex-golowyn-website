@@ -1,12 +1,11 @@
 <script lang="ts">
-import Button from '@/volt/Button.vue'
-import InputText from './volt/InputText.vue';
-
+import { Button } from 'primevue'
+import { InputText } from 'primevue'
 
 export default {
 	components: {
 		Button,
-		InputText
+		InputText,
 	},
 }
 </script>
@@ -26,7 +25,6 @@ export default {
 
 		<div>
 			<Button>Test me</Button>
-			<InputText>Enter:</InputText>
 		</div>
 	</header>
 

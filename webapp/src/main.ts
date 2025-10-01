@@ -1,7 +1,12 @@
 import './assets/index.css'
 
 import { createApp } from 'vue'
+
 import { createPinia } from 'pinia'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+
+const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
 
 import App from './App.vue'
 import router from './router'
@@ -27,7 +32,7 @@ export const WebsiteColorPreset = definePreset(Aura, {
 			900: 'var(--primary-900)',
 			950: 'var(--primary-950)',
 		},
-		secondary: {
+		surface: {
 			50: 'var(--secondary-50)',
 			100: 'var(--secondary-100)',
 			200: 'var(--secondary-200)',
@@ -40,7 +45,7 @@ export const WebsiteColorPreset = definePreset(Aura, {
 			900: 'var(--secondary-900)',
 			950: 'var(--secondary-950)',
 		},
-		accent: {
+		info: {
 			50: 'var(--accent-50)',
 			100: 'var(--accent-100)',
 			200: 'var(--accent-200)',
@@ -56,8 +61,10 @@ export const WebsiteColorPreset = definePreset(Aura, {
 	},
 })
 
-app.use(createPinia())
 app.use(router)
+
+app.use(createPinia())
+app.use(pinia)
 
 app.use(PrimeVue, {
 	theme: {

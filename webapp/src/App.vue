@@ -1,29 +1,19 @@
 <script lang="ts">
-import { Button } from 'primevue'
-// import { InputText } from 'primevue'
 
-import DarkModeToggle from '@/components/DarkModeToggle.vue'
-import { useUIStore } from '@/stores/ui_store'
+
+import NavigationBar from './components/MenuBar.vue'
+
 
 export default {
 	components: {
-		// eslint-disable-next-line vue/no-reserved-component-names
-		Button,
-		// InputText,
-		DarkModeToggle,
+		NavigationBar,
 	},
-
-	mounted() {
-		const uiStore = useUIStore()
-		uiStore.applyDarkClass()
-	}
-
 }
 </script>
 
 <template>
-	<header class="px-[5px]">
-		<div class="wrapper">
+	<header>
+		<!-- <div class="wrapper">
 			<HelloWorld msg="You did it!" />
 			<nav>
 				<RouterLink to="/">Home</RouterLink>
@@ -33,12 +23,28 @@ export default {
 		<div>
 			<Button>Test me</Button>
 			<DarkModeToggle />
-		</div>
+		</div> -->
+
+		<!-- <div class="flex">
+			<DarkModeToggle></DarkModeToggle>
+
+			<Button class="">Test</Button>
+
+			<Button label="Test2" icon="pi pi-check" icon-pos="left" />
+		</div> -->
+		<NavigationBar></NavigationBar>
+
+		<Button label="Test" />
+		<Button>Test2</Button>
+
+
 	</header>
 
-	<body>
-		<RouterView />
-	</body>
+	<RouterView />
+
+	<footer>
+		<!-- Copyrighted etc.... -->
+	</footer>
 </template>
 
 <style scoped></style>

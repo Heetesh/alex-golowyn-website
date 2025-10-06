@@ -3,24 +3,14 @@
 <template>
 	<main class="min-h-screen">
 		<div class="flex flex-col items-center justify-start">
-			<div class="relative w-full h-[30vh] lg:h-[40vh] overflow-hidden">
+			<div class="w-full h-[30vh] overflow-hidden">
 				<img class="w-full h-full object-cover object-right lg:object-cover lg:object-center"
 					src="/home/heetesh/Code/alex-golowyn-website/webapp/src/assets/website_hero_image.jpeg"
 					alt="Website Hero image" />
-
-				<div class="absolute inset-0 bg-gradient-to-b from-tranm via-background-50/0 to-background-50">
-				</div>
-
-				<!-- Content positioned over image blended -->
-				<div class="absolute bottom-8 left-1/2  transform -translate-x-1/2 text-center w-full px-4">
-					<h1 class="text-5xl lg:text-6xl font-bold text-text-900 mb-4 drop-shadow-lg">
-						Website Name
-					</h1>
-					<p class="text-xl lg:text-2xl text-text-700 max-w-2xl mx-auto drop-shadow-md">
-					</p>
-				</div>
 			</div>
 
+			<!-- <h1 class="text-primary-500 text-4xl">Website name</h1> -->
+			<h1 class="">Website name</h1>
 
 			<!-- intro -->
 			<div class="flex flex-col gap-0">

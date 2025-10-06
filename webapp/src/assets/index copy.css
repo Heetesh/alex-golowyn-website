@@ -1,36 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 @import 'tailwindcss';
 @import 'tailwindcss-primeui';
 
 @import 'primeicons/primeicons.css';
 
 /* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 /* Your RealTime Colors - Light mode */
 :root {
-	--text-50: #f1f3f4;
-	--text-100: #e2e7e9;
-	--text-200: #c5ced3;
-	--text-300: #a9b6bc;
-	--text-400: #8c9da6;
-	--text-500: #6f8590;
-	--text-600: #596a73;
-	--text-700: #435056;
-	--text-800: #2c353a;
-	--text-900: #161b1d;
-	--text-950: #0b0d0e;
+	--text-50: #eff4f5;
+	--text-100: #e0e8eb;
+	--text-200: #c0d1d8;
+	--text-300: #a1bac4;
+	--text-400: #82a3b0;
+	--text-500: #628c9d;
+	--text-600: #4f707d;
+	--text-700: #3b545e;
+	--text-800: #27383f;
+	--text-900: #141c1f;
+	--text-950: #0a0e10;
 
-	--background-50: #f0f4f5;
-	--background-100: #e0e8eb;
-	--background-200: #c2d1d6;
-	--background-300: #a3bac2;
-	--background-400: #85a3ad;
-	--background-500: #668c99;
-	--background-600: #52707a;
-	--background-700: #3d545c;
-	--background-800: #29383d;
-	--background-900: #141c1f;
-	--background-950: #0a0e0f;
+	--background-50: #eef5f6;
+	--background-100: #ddebee;
+	--background-200: #bbd8dd;
+	--background-300: #99c4cc;
+	--background-400: #77b1bb;
+	--background-500: #559daa;
+	--background-600: #447e88;
+	--background-700: #335e66;
+	--background-800: #223f44;
+	--background-900: #111f22;
+	--background-950: #091011;
 
 	--primary-50: #e5f9ff;
 	--primary-100: #ccf2ff;
@@ -44,32 +44,93 @@
 	--primary-900: #002633;
 	--primary-950: #00131a;
 
-	--secondary-50: #ecf5f8;
-	--secondary-100: #d9ecf2;
-	--secondary-200: #b4d8e4;
-	--secondary-300: #8ec5d7;
-	--secondary-400: #68b1ca;
-	--secondary-500: #429ebd;
-	--secondary-600: #357e97;
-	--secondary-700: #285f71;
-	--secondary-800: #1b3f4b;
-	--secondary-900: #0d2026;
-	--secondary-950: #071013;
+	--secondary-50: #eff4f6;
+	--secondary-100: #dfe9ec;
+	--secondary-200: #bed3da;
+	--secondary-300: #9ebdc7;
+	--secondary-400: #7da7b5;
+	--secondary-500: #5d91a2;
+	--secondary-600: #4a7482;
+	--secondary-700: #385761;
+	--secondary-800: #253a41;
+	--secondary-900: #131d20;
+	--secondary-950: #090e10;
 
-	--accent-50: #eff4f6;
-	--accent-100: #dee9ed;
-	--accent-200: #bdd4db;
-	--accent-300: #9cbec9;
-	--accent-400: #7ba9b7;
-	--accent-500: #5b93a4;
-	--accent-600: #487684;
-	--accent-700: #365863;
-	--accent-800: #243b42;
-	--accent-900: #121d21;
-	--accent-950: #090f10;
+	--accent-50: #edf5f8;
+	--accent-100: #dbebf0;
+	--accent-200: #b7d7e1;
+	--accent-300: #92c3d3;
+	--accent-400: #6eaec4;
+	--accent-500: #4a9ab5;
+	--accent-600: #3b7b91;
+	--accent-700: #2c5d6d;
+	--accent-800: #1e3e48;
+	--accent-900: #0f1f24;
+	--accent-950: #070f12;
 }
 
+/* Dark mode */
+.dark {
+	--text-50: #0a0e10;
+	--text-100: #141c1f;
+	--text-200: #27383f;
+	--text-300: #3b545e;
+	--text-400: #4f707d;
+	--text-500: #628c9d;
+	--text-600: #82a3b0;
+	--text-700: #a1bac4;
+	--text-800: #c0d1d8;
+	--text-900: #e0e8eb;
+	--text-950: #eff4f5;
 
+	--background-50: #091011;
+	--background-100: #111f22;
+	--background-200: #223f44;
+	--background-300: #335e66;
+	--background-400: #447e88;
+	--background-500: #559daa;
+	--background-600: #77b1bb;
+	--background-700: #99c4cc;
+	--background-800: #bbd8dd;
+	--background-900: #ddebee;
+	--background-950: #eef5f6;
+
+	--primary-50: #00131a;
+	--primary-100: #002633;
+	--primary-200: #004d66;
+	--primary-300: #007399;
+	--primary-400: #0099cc;
+	--primary-500: #00bfff;
+	--primary-600: #33ccff;
+	--primary-700: #66d9ff;
+	--primary-800: #99e6ff;
+	--primary-900: #ccf2ff;
+	--primary-950: #e5f9ff;
+
+	--secondary-50: #090e10;
+	--secondary-100: #131d20;
+	--secondary-200: #253a41;
+	--secondary-300: #385761;
+	--secondary-400: #4a7482;
+	--secondary-500: #5d91a2;
+	--secondary-600: #7da7b5;
+	--secondary-700: #9ebdc7;
+	--secondary-800: #bed3da;
+	--secondary-900: #dfe9ec;
+	--secondary-950: #eff4f6;
+
+	--accent-50: #070f12;
+	--accent-100: #0f1f24;
+	--accent-200: #1e3e48;
+	--accent-300: #2c5d6d;
+	--accent-400: #3b7b91;
+	--accent-500: #4a9ab5;
+	--accent-600: #6eaec4;
+	--accent-700: #92c3d3;
+	--accent-800: #b7d7e1;
+	--accent-900: #dbebf0;
+	--accent-950: #edf5f8;
+}
 
 /* Register colors with Tailwind v4 */
 @theme {
@@ -153,7 +214,7 @@
 		@apply font-sans antialiased bg-background-50 text-text-900;
 	}
 
-
+	
 
 	h1,
 	h2,

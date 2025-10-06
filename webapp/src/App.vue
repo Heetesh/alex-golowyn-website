@@ -1,36 +1,50 @@
 <script lang="ts">
-import Button from '@/volt/Button.vue'
-import InputText from './volt/InputText.vue';
+
+
+import NavigationBar from './components/MenuBar.vue'
 
 
 export default {
 	components: {
-		Button,
-		InputText
+		NavigationBar,
 	},
 }
 </script>
 
 <template>
 	<header>
-		<img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-		<div class="wrapper">
+		<!-- <div class="wrapper">
 			<HelloWorld msg="You did it!" />
-
 			<nav>
 				<RouterLink to="/">Home</RouterLink>
 				<RouterLink to="/about">About</RouterLink>
 			</nav>
 		</div>
-
 		<div>
 			<Button>Test me</Button>
-			<InputText>Enter:</InputText>
-		</div>
+			<DarkModeToggle />
+		</div> -->
+
+		<!-- <div class="flex">
+			<DarkModeToggle></DarkModeToggle>
+
+			<Button class="">Test</Button>
+
+			<Button label="Test2" icon="pi pi-check" icon-pos="left" />
+		</div> -->
+		<NavigationBar></NavigationBar>
+
+		<Button label="Test" />
+		<Button>Test2</Button>
+
+
 	</header>
 
 	<RouterView />
+
+	<footer>
+		<!-- Copyrighted etc.... -->
+	</footer>
 </template>
 
 <style scoped></style>

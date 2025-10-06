@@ -1,14 +1,14 @@
 <template>
-	<div>
-		About Page
-	</div>
+    <div>
+        Weekly Quotes
+    </div>
 </template>
 
 <script lang="ts">
+
 export default {
-	data() {
-		return {}
-	},
-	methods: {},
+
 }
 </script>
+
+<style scoped></style>

@@ -1,5 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
 import HomeView from '../views/HomeView.vue'
+import ServicesView from '@/views/Services/ServicesView.vue'
+import AboutView from '@/views/AboutView.vue'
+import ReviewsView from '@/views/ReviewsView.vue'
+import ContactView from '@/views/ContactView.vue'
+import DonationsView from '@/views/DonationsView.vue'
+import VideosView from '@/views/VideosView.vue'
+import WeeklyQuotesView from '@/views/WeeklyQuotesView.vue'
+import WeeklyPhilosophyView from '@/views/WeeklyPhilosophyView.vue'
+import AlphaService from '@/views/Services/AlphaService.vue'
+import BetaService from '@/views/Services/BetaService.vue'
+import CharlieService from '@/views/Services/CharlieService.vue'
+import DeltaService from '@/views/Services/DeltaService.vue'
+import EchoService from '@/views/Services/EchoService.vue'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,13 +23,86 @@ const router = createRouter({
 			name: 'home',
 			component: HomeView,
 		},
+		
 		{
 			path: '/about',
 			name: 'about',
-			// route level code-splitting
-			// this generates a separate chunk (About.[hash].js) for this route
-			// which is lazy-loaded when the route is visited.
-			component: () => import('../views/AboutView.vue'),
+			component: AboutView,
+		},
+
+		{
+			path: '/services',
+			name: 'services',
+			component: ServicesView,
+			children: [
+				{
+					path: '',
+					name: 'services-overview',
+					component: ServicesView
+				},
+				{
+					path: 'alpha',
+					name: 'alpha-service',
+					component: AlphaService
+				},
+				{
+					path: 'beta',
+					name: 'beta-service',
+					component: BetaService
+				},
+				{
+					path: 'charlie',
+					name: 'charlie-service',
+					component: CharlieService
+				},
+				{
+					path: 'delta',
+					name: 'delta-service',
+					component: DeltaService
+				},
+				{
+					path: 'echo',
+					name: 'Echo-service',
+					component: EchoService
+				},
+			]
+		},
+
+		{
+			path: '/weekly_quotes',
+			name: 'weekly-quotes',
+			component: WeeklyQuotesView,
+		},
+
+		{
+			path: '/weekly_philosophy',
+			name: 'weekly-philosophy',
+			component: WeeklyPhilosophyView,
+		},
+
+		{
+			path: '/videos',
+			name: 'videos',
+			component: VideosView,
+		},
+
+
+		{
+			path: '/reviews',
+			name: 'reviews',
+			component: ReviewsView,
+		},
+
+		{
+			path: '/contact',
+			name: 'contact',
+			component: ContactView,
+		},
+
+		{
+			path: '/donations',
+			name: 'donations',
+			component: DonationsView,
 		},
 	],
 })

@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-export const useAudioStore = defineStore('ui', {
+export const useAudioStore = defineStore('audio', {
     state: () => ({
         playbackTime: 0,
         

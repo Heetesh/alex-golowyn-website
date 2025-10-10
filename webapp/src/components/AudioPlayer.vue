@@ -20,7 +20,7 @@ export default {
     },
 
     mounted() {
-        this.audio = new Audio(sound)
+        this.audio = useAudioStore().getAudioInstance(sound)
         this.audio.loop = true
         this.audio.volume = .1
         this.audio.preload = "auto"

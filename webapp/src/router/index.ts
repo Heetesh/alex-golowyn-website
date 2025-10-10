@@ -23,7 +23,7 @@ const router = createRouter({
 			name: 'home',
 			component: HomeView,
 		},
-		
+
 		{
 			path: '/about',
 			name: 'about',
@@ -38,34 +38,34 @@ const router = createRouter({
 				{
 					path: '',
 					name: 'services-overview',
-					component: ServicesView
+					component: ServicesView,
 				},
 				{
 					path: 'alpha',
 					name: 'alpha-service',
-					component: AlphaService
+					component: AlphaService,
 				},
 				{
 					path: 'beta',
 					name: 'beta-service',
-					component: BetaService
+					component: BetaService,
 				},
 				{
 					path: 'charlie',
 					name: 'charlie-service',
-					component: CharlieService
+					component: CharlieService,
 				},
 				{
 					path: 'delta',
 					name: 'delta-service',
-					component: DeltaService
+					component: DeltaService,
 				},
 				{
 					path: 'echo',
 					name: 'Echo-service',
-					component: EchoService
+					component: EchoService,
 				},
-			]
+			],
 		},
 
 		{
@@ -85,7 +85,6 @@ const router = createRouter({
 			name: 'videos',
 			component: VideosView,
 		},
-
 
 		{
 			path: '/reviews',

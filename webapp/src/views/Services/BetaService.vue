@@ -1,15 +1,12 @@
 <template>
-    <div>
-        Beta Service
-    </div>
+	<div>Beta Service</div>
 </template>
 
 <script lang="ts">
 export default {
-    setup() {
-
-        return {}
-    }
+	setup() {
+		return {}
+	},
 }
 </script>
 

@@ -15,9 +15,6 @@ import PrimeVue from 'primevue/config'
 import { definePreset } from '@primeuix/themes'
 import Aura from '@primeuix/themes/aura'
 
-import Nora from '@primeuix/themes/nora'
-import Material from '@primeuix/themes/material'
-import Lara from '@primeuix/themes/lara'
 
 
 const app = createApp(App)
@@ -30,7 +27,7 @@ export const WebsiteColorPreset = definePreset(Aura, {
 			200: 'var(--primary-200)',
 			300: 'var(--primary-300)',
 			400: 'var(--primary-400)',
-			500: 'var(--primary-500)', 
+			500: 'var(--primary-500)',
 			600: 'var(--primary-600)',
 			700: 'var(--primary-700)',
 			800: 'var(--primary-800)',
@@ -50,19 +47,7 @@ export const WebsiteColorPreset = definePreset(Aura, {
 			900: 'var(--secondary-900)',
 			950: 'var(--secondary-950)',
 		},
-		// info: {
-		// 	50: 'var(--accent-50)',
-		// 	100: 'var(--accent-100)',
-		// 	200: 'var(--accent-200)',
-		// 	300: 'var(--accent-300)',
-		// 	400: 'var(--accent-400)',
-		// 	500: 'var(--accent-500)',
-		// 	600: 'var(--accent-600)',
-		// 	700: 'var(--accent-700)',
-		// 	800: 'var(--accent-800)',
-		// 	900: 'var(--accent-900)',
-		// 	950: 'var(--accent-950)',
-		// },
+		
 	},
 })
 

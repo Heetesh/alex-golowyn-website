@@ -23,8 +23,11 @@ start-backend:
 start-frontend:
     cd webapp && yarn dev
 
+# dev:
+#     just start-backend & just start-frontend
+
 dev:
-    just start-backend & just start-frontend
+    just start-frontend
 
 # dev:
 #     (cd server && poetry run uvicorn server.main:app --host 0.0.0.0 --port 8000 --reload) & \

@@ -1,16 +1,12 @@
 <template>
-    <div>
-        Delta Service
-
-    </div>
+	<div>Delta Service</div>
 </template>
 
 <script lang="ts">
 export default {
-    setup() {
-
-        return {}
-    }
+	setup() {
+		return {}
+	},
 }
 </script>
 

@@ -1,15 +1,12 @@
 <template>
-    <div>
-        Echo Service
-    </div>
+	<div>Echo Service</div>
 </template>
 
 <script lang="ts">
 export default {
-    setup() {
-
-        return {}
-    }
+	setup() {
+		return {}
+	},
 }
 </script>
 

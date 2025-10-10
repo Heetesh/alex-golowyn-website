@@ -1,14 +1,9 @@
 <template>
-    <div>
-        Weekly Quotes
-    </div>
+	<div>Weekly Quotes</div>
 </template>
 
 <script lang="ts">
-
-export default {
-
-}
+export default {}
 </script>
 
 <style scoped></style>

@@ -1,43 +1,20 @@
 <script lang="ts">
-
-
 import NavigationBar from './components/MenuBar.vue'
-
+import AudioPlayer from './components/AudioPlayer.vue';
 
 export default {
 	components: {
 		NavigationBar,
+		AudioPlayer,
 	},
 }
 </script>
 
 <template>
 	<header>
-		<!-- <div class="wrapper">
-			<HelloWorld msg="You did it!" />
-			<nav>
-				<RouterLink to="/">Home</RouterLink>
-				<RouterLink to="/about">About</RouterLink>
-			</nav>
-		</div>
-		<div>
-			<Button>Test me</Button>
-			<DarkModeToggle />
-		</div> -->
 
-		<!-- <div class="flex">
-			<DarkModeToggle></DarkModeToggle>
-
-			<Button class="">Test</Button>
-
-			<Button label="Test2" icon="pi pi-check" icon-pos="left" />
-		</div> -->
+		<AudioPlayer />
 		<NavigationBar></NavigationBar>
-
-		<Button label="Test" />
-		<Button>Test2</Button>
-
-
 	</header>
 
 	<RouterView />

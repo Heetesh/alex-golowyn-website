@@ -1,23 +1,25 @@
 import { defineStore } from 'pinia'
 
 export const useAudioStore = defineStore('audio', {
-    state: () => ({
-        playbackTime: 0,
-        audioInstance : null as HTMLAudioElement | null,
-        
-    }),
+	state: () => ({
+		currentTime: 0,
+		isAudioMuted: false,
+		hasInteracted: false,
+	}),
 
-    actions: {
-        setPlaybackTime(time: number) {
-            this.playbackTime = time
-        },
-        getAudioInstance(src: string) {
-            if (!this.audioInstance) {
-                this.audioInstance = new Audio(src)
-            }
-            return this.audioInstance
-        }
-    },
+	actions: {
+		setPlaybackTime(time: number): void {
+			this.currentTime = time
+		},
 
-    persist: true,
+		toggleMute() {
+			this.isAudioMuted = !this.isAudioMuted
+		},
+	},
+
+	persist: {
+		pick: ['currentTime'],
+		//  pick: ['currentTime', 'isAudioMuted'],
+		//  pick: ['isAudioMuted'],
+	},
 })

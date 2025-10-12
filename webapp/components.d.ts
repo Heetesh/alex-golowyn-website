@@ -10,12 +10,12 @@ declare module 'vue' {
   export interface GlobalComponents {
     AudioPlayer: typeof import('./src/components/AudioPlayer.vue')['default']
     Button: typeof import('primevue/button')['default']
-    Chip: typeof import('primevue/chip')['default']
+    Card: typeof import('primevue/card')['default']
     DonationsBox: typeof import('./src/components/DonationsBox.vue')['default']
     Menubar: typeof import('primevue/menubar')['default']
     MenuBar: typeof import('./src/components/MenuBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    WeeklyQuotes: typeof import('./src/components/WeeklyQuotes.vue')['default']
+    WeeklyCardItem: typeof import('./src/components/WeeklyCardItem.vue')['default']
   }
 }

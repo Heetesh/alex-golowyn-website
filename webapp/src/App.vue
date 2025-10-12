@@ -1,6 +1,6 @@
 <script lang="ts">
 import NavigationBar from './components/MenuBar.vue'
-import AudioPlayer from './components/AudioPlayer.vue';
+import AudioPlayer from './components/AudioPlayer.vue'
 
 export default {
 	components: {
@@ -12,7 +12,6 @@ export default {
 
 <template>
 	<header>
-
 		<AudioPlayer />
 		<NavigationBar></NavigationBar>
 	</header>

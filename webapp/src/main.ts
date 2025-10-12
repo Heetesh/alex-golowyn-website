@@ -15,8 +15,6 @@ import PrimeVue from 'primevue/config'
 import { definePreset } from '@primeuix/themes'
 import Aura from '@primeuix/themes/aura'
 
-
-
 const app = createApp(App)
 
 export const WebsiteColorPreset = definePreset(Aura, {
@@ -47,7 +45,6 @@ export const WebsiteColorPreset = definePreset(Aura, {
 			900: 'var(--secondary-900)',
 			950: 'var(--secondary-950)',
 		},
-		
 	},
 })
 

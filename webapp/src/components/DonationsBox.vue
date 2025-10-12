@@ -13,15 +13,12 @@ export default {
 </script> -->
 
 <template>
-    <div>
-
-    </div>
+	<div></div>
 </template>
 
 <script lang="ts">
-
 export default {
-    name: "DonationsBox",
+	name: 'DonationsBox',
 }
 </script>
 

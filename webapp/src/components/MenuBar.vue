@@ -1,19 +1,13 @@
 <template>
-	<div class="">
-		<div
-			class="w-full h-[40px]"
-			:class="audioStore.hasInteracted ? 'bg-green-500' : 'bg-red-500'"
-		>
+	<div>
+		<!-- <div class="w-full h-[40px]" :class="audioStore.hasInteracted ? 'bg-green-500' : 'bg-red-500'">
 			{{ audioStore.hasInteracted ? 'User Interacted' : 'Not interacted yet' }}
-		</div>
-		<Menubar :model="items">
+		</div> -->
+		<Menubar :model="items" pt:root="!bg-primary-500" pt:itemLabel="">
 			<template #end>
-				<Button
-					v-if="audioStore.hasInteracted"
-					:class="audioStore.isAudioMuted ? 'p-button-primary' : 'p-button-primary'"
-					:icon="audioStore.isAudioMuted ? 'pi pi-volume-off' : 'pi pi-volume-up'"
-					@click="muteAudio()"
-				/>
+				<Button v-if="audioStore.hasInteracted"
+					:class="audioStore.isAudioMuted ? 'p-button-primary' : 'p-button-info'"
+					:icon="audioStore.isAudioMuted ? 'pi pi-volume-off' : 'pi pi-volume-up'" @click="muteAudio()" />
 			</template>
 		</Menubar>
 	</div>

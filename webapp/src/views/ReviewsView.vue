@@ -1,3 +1,5 @@
 <template>
-	<div></div>
+	<div>
+		<p>Client testimony:</p>
+	</div>
 </template>

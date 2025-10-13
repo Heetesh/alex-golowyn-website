@@ -14,6 +14,7 @@ declare module 'vue' {
     DonationsBox: typeof import('./src/components/DonationsBox.vue')['default']
     Menubar: typeof import('primevue/menubar')['default']
     MenuBar: typeof import('./src/components/MenuBar.vue')['default']
+    ReviewCard: typeof import('./src/components/ReviewCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     WeeklyCardItem: typeof import('./src/components/WeeklyCardItem.vue')['default']

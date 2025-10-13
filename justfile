@@ -10,8 +10,8 @@ code-test:
 
 
 install:
-    cd server && poetry install
-    cd webapp && yarn install
+    # cd server && poetry install
+    cd website && yarn install
     # Remember to activate the venv in ./server/.venv
 
 start-backend:
@@ -21,7 +21,7 @@ start-backend:
 
 
 start-frontend:
-    cd webapp && yarn dev
+    cd website && yarn dev
 
 # dev:
 #     just start-backend & just start-frontend

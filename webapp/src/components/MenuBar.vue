@@ -3,7 +3,7 @@
 		<!-- <div class="w-full h-[40px]" :class="audioStore.hasInteracted ? 'bg-green-500' : 'bg-red-500'">
 			{{ audioStore.hasInteracted ? 'User Interacted' : 'Not interacted yet' }}
 		</div> -->
-		<Menubar :model="items" pt:root="!bg-primary-500" pt:itemLabel="">
+		<Menubar :model="items" pt:root="" pt:itemLabel="">
 			<template #end>
 				<Button v-if="audioStore.hasInteracted"
 					:class="audioStore.isAudioMuted ? 'p-button-primary' : 'p-button-info'"

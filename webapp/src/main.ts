@@ -1,6 +1,5 @@
-/* eslint-disable vue/no-reserved-component-names */
-/* eslint-disable vue/multi-word-component-names */
 import './assets/index.css'
+
 
 import { createApp } from 'vue'
 
@@ -16,7 +15,13 @@ import router from './router'
 import PrimeVue from 'primevue/config'
 import { definePreset } from '@primeuix/themes'
 import Aura from '@primeuix/themes/aura'
-import { semantic  as Semantics } from '@primeuix/themes/lara/base'
+import { semantic as Semantics } from '@primeuix/themes/lara/base'
+
+// import '@primeuix/themes/aura/primevue.css' // Core + Theme combined
+// import 'primevue/primevue.css'
+import 'primeicons/primeicons.css' // Icons
+
+import '@primeuix/themes/tokens'
 
 
 export const WebsiteColorPreset = definePreset(Aura, {
@@ -89,26 +94,19 @@ export const WebsiteColorPreset = definePreset(Aura, {
 					shadow: ''
 				},
 				formField: {
-					hoverBorderColor: '{primary.color}'
+					hoverBorderColor: '{primary.color}',
+					color: '{primary.color}',
 				}
 
 				
 			}, 
-		}
+		},
+		
 	} as typeof Semantics
 
 });
 
 const app = createApp(App)
-
-
-
-
-
-app.use(router)
-
-app.use(createPinia())
-app.use(pinia)
 
 app.use(PrimeVue, {
 	theme: {
@@ -118,9 +116,11 @@ app.use(PrimeVue, {
 	
 })
 
-// app.component('Button', Button)
+app.use(router)
+
+app.use(pinia)
+
 
 
 app.mount('#app')
 
-// useUIStore().applyDarkClass()

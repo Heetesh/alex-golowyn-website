@@ -15,6 +15,9 @@
 			  -->
 
 			<section>
+
+				<InputText>Enter</InputText>
+				<Checkbox />
 				<div class="flex flex-col">
 					<h1 class="text-center text-primary-500">Website name</h1>
 
@@ -37,7 +40,7 @@
 				</div>
 			</section>
 
-			<p class="text-red-600">Fix positioning for quotes</p>
+			<!-- <p class="text-red-600">Fix positioning for quotes</p> -->
 			<div class="flex flex-col lg:flex-row gap-2 lg:gap-4 items-stretch">
 				<!-- Weekly Quote -->
 				<div class="">
@@ -58,7 +61,7 @@
 
 			<!-- 3 x Reviews -->
 			<div>
-				<p class="text-red-600">Client reviews:</p>
+				<!-- <p class="text-red-600">Client reviews:</p> -->
 				<div class="flex gap-2 justify-evenly">
 					<ReviewCard class="flex-1" name="John Doe"
 						text="I recently started working with Empower Your Journey Life Coaching, and I couldn't be happier! Their website is easy to navigate, and I found all the information I needed quickly.

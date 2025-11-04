@@ -6,16 +6,14 @@ export default {
 		NavigationMenu
 	},
 
-	
+
 }
 
 
 </script>
 
 <template>
-	<header>
-		<NavigationMenu class="flex justify-center items-center" />
-	</header>
+	<NavigationMenu />
 
 	<RouterView />
 </template>

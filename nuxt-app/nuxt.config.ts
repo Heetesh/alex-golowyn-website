@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/fonts',
     '@pinia/nuxt',
+    '@vueuse/nuxt'
   ],
 
   css: ['~/assets/css/main.css'],
@@ -33,5 +34,8 @@ export default defineNuxtConfig({
 
   ssr: false,
 
+  // app: {
+  //   pageTransition: { name: 'page', mode: "out-in"}
+  // }
   
 })

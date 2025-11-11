@@ -1,14 +1,19 @@
 <template>
 	<div v-if="isDesktop">
-		<UNavigationMenu :items="navigationItems" />
+		<UNavigationMenu
+			:ui="{ link: 'text-base' }"
+			class="flex justify-center items-center bg-accented mb-2"
+			:items="navigationItems"
+		/>
 	</div>
 
-	<div v-else class="flex justify-end bg-neutral-50 rounded-none">
+	<div v-else class="flex justify-end bg-accented rounded-none mb-2">
 		<UButton
 			icon="i-lucide-menu"
 			size="xl"
-			variant="ghost"
+			variant="solid"
 			color="primary"
+			class="my-2 mr-2"
 			@click="openDrawer"
 		/>
 

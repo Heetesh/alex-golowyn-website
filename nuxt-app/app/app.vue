@@ -1,8 +1,8 @@
 <template>
-  <UApp>
-    <NuxtRouteAnnouncer />
-    <AppNavigationMenu />
-    <NuxtPage />
-    <AppFooter />
-  </UApp>
+	<UApp>
+		<NuxtRouteAnnouncer />
+		<AppNavigationMenu />
+		<NuxtPage />
+		<AppFooter />
+	</UApp>
 </template>

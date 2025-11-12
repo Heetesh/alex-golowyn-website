@@ -4,9 +4,9 @@ export default defineAppConfig({
 	        primary: 'blue',
             secondary: 'emerald',
             neutral: 'slate',
-            success: 'emerald',
-            info: 'blue',
-            warning: 'orange',
+            success: 'green',
+            info: 'orange',
+            warning: 'amber',
             error: 'red',
         },
   }

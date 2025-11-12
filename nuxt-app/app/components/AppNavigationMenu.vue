@@ -7,7 +7,7 @@
 		/>
 	</div>
 
-	<div v-else class="flex justify-end bg-accented rounded-none mb-2">
+	<div v-else class="flex justify-end rounded-none mb-2">
 		<UButton
 			icon="i-lucide-menu"
 			size="xl"
@@ -84,6 +84,11 @@ export default {
 					label: "Donations",
 					icon: "",
 					to: "/donations",
+				},
+				{
+					label: "Reviews",
+					icon: "",
+					to: "/reviews",
 				},
 				{
 					label: "Contact",

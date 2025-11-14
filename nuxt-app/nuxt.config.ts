@@ -12,14 +12,16 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/fonts',
     '@pinia/nuxt',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    '@formkit/auto-animate/nuxt',
+    'motion-v/nuxt',
   ],
 
   css: ['~/assets/css/main.css'],
 
   fonts: {
     defaults: {
-      weights: [100,200,300,400,500,600,700,800,900],
+      weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
       styles: ["normal", "italic"],
       
     },
@@ -34,8 +36,11 @@ export default defineNuxtConfig({
 
   ssr: false,
 
-  // app: {
-  //   pageTransition: { name: 'page', mode: "out-in"}
-  // }
-  
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      ]
+    }
+  },
 })

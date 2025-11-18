@@ -1,14 +1,14 @@
 <template>
-    <div>
-        <UButton>Donations</UButton>
-    </div>
+	<UContainer>
+		<UPage>
+			<UPageBody />
+			<UButton> Donations</UButton>
+		</UPage>
+	</UContainer>
 </template>
 
 <script lang="ts">
-
-export default {
-
-}
+	export default {};
 </script>
 
 <style scoped></style>

@@ -1,8 +1,5 @@
 <template>
-	<UApp>
-		<NuxtRouteAnnouncer />
-		<AppNavigationMenu class="sticky top-0 z-50 mb-2" />
+	<NuxtLayout>
 		<NuxtPage />
-		<AppFooter />
-	</UApp>
+	</NuxtLayout>
 </template>

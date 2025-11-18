@@ -1,14 +1,11 @@
 <template>
-    <div>
-        <UButton>Weekly Philosophy</UButton>
-    </div>
+	<div>
+		<UButton>Weekly Philosophy</UButton>
+	</div>
 </template>
 
 <script lang="ts">
-
-export default {
-
-}
+	export default {};
 </script>
 
 <style scoped></style>

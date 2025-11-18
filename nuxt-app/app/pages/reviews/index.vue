@@ -1,14 +1,11 @@
 <template>
-    <div>
-        <UButton>Reviews</UButton>
-    </div>
+	<div>
+		<motion.button>Click</motion.button>
+	</div>
 </template>
 
-<script lang="ts">
-
-export default {
-
-}
+<script setup lang="ts">
+	import { motion } from "motion-v";
 </script>
 
 <style scoped></style>

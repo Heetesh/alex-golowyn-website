@@ -1,14 +1,11 @@
 <template>
-    <div>
-        <UButton>Weekly Quotes</UButton>
-    </div>
+	<div>
+		<UButton>Weekly Quotes</UButton>
+	</div>
 </template>
 
 <script lang="ts">
-
-export default {
-
-}
+	export default {};
 </script>
 
 <style scoped></style>

@@ -1,14 +1,11 @@
 <template>
-    <div>
-        <UButton>Alpha Service</UButton>
-    </div>
+	<div>
+		<UButton>Alpha Service</UButton>
+	</div>
 </template>
 
 <script lang="ts">
-
-export default {
-
-}
+	export default {};
 </script>
 
 <style scoped></style>

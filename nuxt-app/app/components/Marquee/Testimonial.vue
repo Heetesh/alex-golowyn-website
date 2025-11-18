@@ -1,12 +1,11 @@
 <template>
-	<div/>
-	
+	<div />
 </template>
 
 <script setup lang="ts">
-import type { PageCardProps } from "@nuxt/ui";
+// import type { PageCardProps } from "@nuxt/ui";
 
-const testCards: PageCardProps[] = useNavigationStore().getServicesCardsForHomepage;
+// const testCards: PageCardProps[] = useNavigationStore().getServicesCardsForHomepage;
 </script>
 
 <style scoped></style>

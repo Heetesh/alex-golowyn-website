@@ -16,9 +16,16 @@
 				>
 			</UPageHero>
 
-			<UPageSection title="Our Services" description="Check out what we have to offer.">
+			<UPageSection
+				title="Our Services"
+				description="Check out what we have to offer."
+			>
 				<UPageGrid>
-					<UPageCard v-for="(card, index) in serviceCards" :key="index" v-bind="card" />
+					<UPageCard
+						v-for="(card, index) in serviceCards"
+						:key="index"
+						v-bind="card"
+					/>
 				</UPageGrid>
 			</UPageSection>
 
@@ -60,7 +67,11 @@
 				>
 					<UPageCard v-bind="useNavigationStore().getWeeklyQuote" />
 				</UPageCard>
-				<UPageCard title="Weekly Philosphy" to="/weekly_philosophy" variant="naked">
+				<UPageCard
+					title="Weekly Philosphy"
+					to="/weekly_philosophy"
+					variant="naked"
+				>
 					<UPageCard v-bind="useNavigationStore().getWeeklyPhilosophy" />
 				</UPageCard>
 			</UPageSection>
@@ -74,71 +85,71 @@
 </template>
 
 <script setup lang="ts">
-	import type { ButtonProps, UserProps } from "@nuxt/ui";
+import type { ButtonProps /* , UserProps */ } from "@nuxt/ui";
 
-	import cliffImage from "@/assets/images/cliff_sunset_with_beach.jpg";
+import cliffImage from "@/assets/images/cliff_sunset_with_beach.jpg";
 
-	interface Testimonial {
-		user: UserProps;
-		quote: string;
-	}
+// interface Testimonial {
+// 	user: UserProps;
+// 	quote: string;
+// }
 
-	definePageMeta({
-		title: "Home Page",
-	});
+definePageMeta({
+	title: "Home Page",
+});
 
-	const heroLinks = ref<ButtonProps[]>([
-		{
-			label: "Services",
-			to: "/services",
-			icon: "i-lucide-sparkles",
-			variant: "solid",
-		},
-		{
-			label: "Donate",
-			to: "/donations",
-			icon: "",
-			variant: "subtle",
-			trailingIcon: "i-lucide-heart-handshake",
-			color: "secondary",
-			class: "animate__animated animate__tada",
-		},
-	]);
+const heroLinks = ref<ButtonProps[]>([
+	{
+		label: "Services",
+		to: "/services",
+		icon: "i-lucide-sparkles",
+		variant: "solid",
+	},
+	{
+		label: "Donate",
+		to: "/donations",
+		icon: "",
+		variant: "subtle",
+		trailingIcon: "i-lucide-heart-handshake",
+		color: "secondary",
+		class: "animate__animated animate__tada",
+	},
+]);
 
-	const serviceCards = useNavigationStore().getServicesCardsForHomepage;
+const serviceCards = useNavigationStore().getServicesCardsForHomepage;
 
-	const reviewsCard = useNavigationStore().getUserTestimonialsAsCards;
+const reviewsCard = useNavigationStore().getUserTestimonialsAsCards;
 
-	const testimonials = ref<Testimonial[]>([
-		{
-			user: {
-				name: "Michael Chen",
-				description: "",
-			},
-			quote: "Transformed my mindset from fixed to growth in just weeks.",
-		},
-		{
-			user: {
-				name: "David Thompson",
-				description: "",
-			},
-			quote: "Finally achieved work-life balance after years of struggling.",
-		},
-		{
-			user: {
-				name: "James Wilson",
-				description: "",
-			},
-			quote: "Went from unsure to unstoppable with the right guidance.",
-		},
-		{
-			user: {
-				name: "Sarah Johnson",
-				description: "",
-			},
-			quote: "Alex helped me find clarity and purpose I never knew I had.",
-		},
-	]);
+// const testimonials = ref<Testimonial[]>([
+// 	{
+// 		user: {
+// 			name: "Michael Chen",
+// 			description: "",
+// 		},
+// 		quote: "Transformed my mindset from fixed to growth in just weeks.",
+// 	},
+// 	{
+// 		user: {
+// 			name: "David Thompson",
+// 			description: "",
+// 		},
+// 		quote: "Finally achieved work-life balance after years of struggling.",
+// 	},
+// 	{
+// 		user: {
+// 			name: "James Wilson",
+// 			description: "",
+// 		},
+// 		quote: "Went from unsure to unstoppable with the right guidance.",
+// 	},
+// 	{
+// 		user: {
+// 			name: "Sarah Johnson",
+// 			description: "",
+// 		},
+// 		quote: "Alex helped me find clarity and purpose I never knew I had.",
+// 	},
+// ]);
 </script>
 
 <style scoped></style>

@@ -42,8 +42,6 @@ export default defineNuxtConfig({
 		preference: "light",
 	},
 
-	// ssr: true,
-
 	compatibilityDate: "2025-07-15",
 
 	nitro: {

@@ -3,11 +3,11 @@
 		<UPage>
 			<UPageHero
 				class=""
-				title="Welcome to the website"
+				title="Welcome to the website message"
 				description="Your introduction would go over here Sash. I will write some boiler text to have an idea of the introduction. This can be changed later on to a different layout if you want. Writing some more boiler text and we keep going. We've reached about halfway of the introduction. Maybe some more. I have a page hero or a call to action that hopefully will entice the user to click on the services and/or donate. These would be the main features of the website. We have probably reached close to or near the introduction text length. Let us keep going for good measures. Alright I will stop typing now, haha."
 				headline=""
 				:links="heroLinks"
-				:orientation="useIsDesktop() ? 'horizontal' : 'vertical'"
+				:orientation="useIsDesktop().value ? 'horizontal' : 'vertical'"
 			>
 				<img
 					:src="cliffImage"
@@ -19,8 +19,11 @@
 			<UPageSection
 				title="Our Services"
 				description="Check out what we have to offer."
+				orientation="vertical"
 			>
-				<UPageGrid>
+				<UPageGrid
+					class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+				>
 					<UPageCard
 						v-for="(card, index) in serviceCards"
 						:key="index"
@@ -35,13 +38,22 @@
 				:orientation="useIsDesktop().value ? 'vertical' : 'vertical'"
 				description="I have decided to include reviews at top the top sections. This will be beneficial to the flow and getting user's attention and hopefully it will mean more engagement and clicks on services. This section will be renamed to simple = 'What our users have to say' or anything you want to."
 			>
-				<UMarquee pause-on-hover>
+				<UMarquee
+					pause-on-hover
+					:overlay="useIsDesktop().value ? true : false"
+				>
 					<UPageCard
 						v-for="(card, index) in reviewsCard"
 						:key="index"
 						v-bind="card"
-						class="m-2"
-					/>
+						class="m-2 w-96 h-40 overflow-hidden border-primary border"
+					>
+						<template #title>
+							<p class="line-clamp-4">
+								{{ card.title }}
+							</p>
+						</template>
+					</UPageCard>
 				</UMarquee>
 			</UPageSection>
 
@@ -77,7 +89,8 @@
 			</UPageSection>
 
 			<UPageSection
-				title="A little about myself"
+				title="About me"
+				headline=""
 				description="This can be reworded to look more professional as you requested. This is not the final text anyways. This is the 'About' or 'About Me' section."
 			/>
 		</UPage>
@@ -85,7 +98,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ButtonProps /* , UserProps */ } from "@nuxt/ui";
+import type { ButtonProps } from "@nuxt/ui";
 
 import cliffImage from "@/assets/images/cliff_sunset_with_beach.jpg";
 
@@ -94,9 +107,18 @@ import cliffImage from "@/assets/images/cliff_sunset_with_beach.jpg";
 // 	quote: string;
 // }
 
-definePageMeta({
-	title: "Home Page",
+useHead({
+	title: "Alex Golowyn - Home Page",
+	meta: [
+		{
+			name: "Test",
+		},
+	],
 });
+
+// const { data: tasks, error, status } = await useFetch('/api/tasks', {
+// 	lazy: true,
+// })
 
 const heroLinks = ref<ButtonProps[]>([
 	{

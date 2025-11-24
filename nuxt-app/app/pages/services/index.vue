@@ -1,11 +1,19 @@
 <template>
 	<div>
-		<UButton>Main service page</UButton>
+		<UPage>
+			<UPageBody>
+				<UPageCTA
+					variant="solid"
+					title="Services"
+					description="Check out our services"
+				/>
+				<UPageGrid />
+			</UPageBody>
+		</UPage>
 	</div>
 </template>
 
-<script lang="ts">
-export default {};
+<script  setup lang="ts">
 </script>
 
 <style scoped></style>

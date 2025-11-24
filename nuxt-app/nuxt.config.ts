@@ -16,15 +16,32 @@ export default defineNuxtConfig({
 	],
 
 	ssr: false,
-	devtools: { enabled: true },
+
+	devtools: {
+		enabled: true,
+
+		timeline: {
+			enabled: true,
+		},
+	},
 
 	app: {
 		head: {
 			link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+			titleTemplate: "%s",
+			meta: [
+				{ name: "viewport", content: "width=device-width, initial-scale=1" },
+				{ name: "charset", content: "utf-8" },
+			],
 		},
 	},
 
 	css: ["~/assets/css/main.css"],
+
+	colorMode: {
+		preference: "light",
+	},
+
 	compatibilityDate: "2025-07-15",
 
 	nitro: {

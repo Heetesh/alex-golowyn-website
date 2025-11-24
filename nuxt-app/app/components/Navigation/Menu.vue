@@ -1,12 +1,16 @@
 <template>
 	<UHeader
-		class="sticky"
 		title=""
 		to="/"
 		mode="drawer"
 		:menu="{ direction: 'right', ...{} }"
 	>
-		<UNavigationMenu :items="navigationMenuItems" />
+		<UNavigationMenu
+			:items="navigationMenuItems"
+			content-orientation="vertical"
+			:highlight="true"
+			color="primary"
+		/>
 		<!-- template body passes passes the UNavigationMenu to the drawer -->
 		<template #body>
 			<UNavigationMenu

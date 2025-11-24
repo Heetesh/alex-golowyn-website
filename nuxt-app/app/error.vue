@@ -9,7 +9,11 @@ const props = defineProps<{
 <template>
 	<UApp>
 		<!-- <UHeader /> -->
-		<UError :error="props.error" />
+
+		<UError
+			:error="props.error"
+			redirect="/home"
+		/>
 
 		<!-- <UFooter /> -->
 	</UApp>

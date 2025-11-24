@@ -1,4 +1,4 @@
-import type { NavigationMenuItem, PageCardProps } from "@nuxt/ui";
+import type { NavigationMenuChildItem, NavigationMenuItem, PageCardProps } from "@nuxt/ui";
 
 // interface WeeklyQuote {
 // 	quote: string;
@@ -10,13 +10,34 @@ export const useNavigationStore = defineStore("navigation", {
 		_navigationItems: [
 			{
 				label: "Home",
-				icon: "",
+				icon: "material-symbols:home",
 				to: "/",
+				tooltip: { text: "Hello" },
 			},
 			{
 				label: "Services",
 				icon: "",
 				to: "/services",
+				exact: false,
+				children: [
+					{
+						label: "Alpha",
+						to: "/services/alpha",
+					},
+					{
+						label: "Beta",
+						to: "/services/beta",
+					},
+					{
+						label: "Charlie",
+						to: "/services/charlie",
+					},
+					{
+						label: "Delta",
+						to: "/services/delta",
+					},
+
+				] as NavigationMenuChildItem[],
 			},
 			{
 				label: "Weekly Quotes",
@@ -156,7 +177,8 @@ export const useNavigationStore = defineStore("navigation", {
 		} as PageCardProps,
 
 		weeklyPhilosphy: {
-			title: "Success is not final, failure is not fatal; it is the courage to continue that counts.",
+			title:
+				"Success is not final, failure is not fatal; it is the courage to continue that counts.",
 			description: "Winston Churchill",
 			// spotlight: true,
 			// spotlightColor: "primary",
@@ -172,7 +194,8 @@ export const useNavigationStore = defineStore("navigation", {
 
 		userTestimonialCards: [
 			{
-				title: "Alex helped me find clarity and purpose I never knew I had.Alex helped me find clarity and purpose I never knew I had.Alex helped me find clarity and purpose I never knew I had.",
+				title:
+					"Alex helped me find clarity and purpose I never knew I had.",
 				description: "Sarah Johnson",
 				// spotlight: true,
 				// spotlightColor: "primary",

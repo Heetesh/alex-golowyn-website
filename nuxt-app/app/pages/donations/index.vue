@@ -1,10 +1,8 @@
 <template>
-	<UContainer>
-		<UPage>
-			<UPageBody />
-			<UButton> Donations</UButton>
-		</UPage>
-	</UContainer>
+	<UPage>
+		<UPageBody />
+		<UButton> Donations</UButton>
+	</UPage>
 </template>
 
 <script lang="ts">

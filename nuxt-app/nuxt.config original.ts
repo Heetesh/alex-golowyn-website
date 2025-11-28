@@ -18,9 +18,13 @@ export default defineNuxtConfig({
 
 	ssr: false,
 
-	// devtools: {
-	// 	enabled: true,
-	// },
+	devtools: {
+		enabled: true,
+
+		timeline: {
+			enabled: true,
+		},
+	},
 
 	app: {
 		head: {
@@ -46,6 +50,8 @@ export default defineNuxtConfig({
 		preference: "light",
 	},
 
+	// ssr: true,
+
 	compatibilityDate: "2025-07-15",
 
 	nitro: {
@@ -53,7 +59,7 @@ export default defineNuxtConfig({
 
 	},
 
-	// debug: process.env.NODE_ENV !== "production",
+	debug: process.env.NODE_ENV !== "production",
 
 	hooks: {
 		"prerender:routes"({ routes }) {

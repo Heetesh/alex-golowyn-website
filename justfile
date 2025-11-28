@@ -2,7 +2,10 @@ shell:
     nix --experimental-features 'nix-command flakes' develop
 
 code:
-    nix --experimental-features 'nix-command flakes' develop --command sh -c 'code .'
+    nix develop --command sh -c 'code .'
+
+# code:
+#     nix --experimental-features 'nix-command flakes' develop --command sh -c 'code .'
 
 code-test:
     nix develop --command sh -c 'code .'

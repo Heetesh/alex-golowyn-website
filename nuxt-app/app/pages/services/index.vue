@@ -2,8 +2,7 @@
 	<div>
 		<UPage>
 			<UPageBody>
-				<UPageCTA
-					variant="solid"
+				<UPageHero
 					title="Services"
 					description="Check out our services"
 				/>

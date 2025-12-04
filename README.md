@@ -1,29 +1,39 @@
 # Alex Golowyn Business Website
 
+Business website for Alex Golowyn.
+
 ## Nuxt v4 project important details
 
-Project is not SSR but a SPA website.
+Project is currently being developed as a SPA using Nuxt v4.
 
 ## Setup
 
 ```bash
-    yarn
+    cd nuxt-app && yarn
 ```
 
 ## Dev
 
 ```bash
-    yarn dev
+    cd nuxt-app && yarn dev
 ```
 
 ## Build
 
 ```bash
-    yarn build
+    cd nuxt-app && yarn build
 ```
 
-Make sure to set preset in nuxt.config.ts
-Preset is by default netlify static with no routes
-Config already contains prerender routes to generate only an index.html, 202.html & 404.html -> Fully SPA as static website
+## Nuxt build preset
 
-Build generates a netlify static folder to /dist
+### Preset for deployment
+
+Update preset depending on build type
+
+### Current build deployment preset
+
+```bash
+    netlify-static
+```
+
+MIGHT change to vercel for SSR and server features.

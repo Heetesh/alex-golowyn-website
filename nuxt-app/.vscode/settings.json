@@ -60,5 +60,8 @@
             "severity": "off",
             "fixable": true
         }
-    ]
+    ],
+    "files.associations": {
+        "*.css": "tailwindcss"
+    }
 }

@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "Vue.volar",
+        "bradlc.vscode-tailwindcss",
+        "jnoortheen.nix-ide",
+        "skellock.just",
+        "YoavBls.pretty-ts-errors",
+        "mechatroner.rainbow-csv",
+        "ritwickdey.LiveServer"
+    ]
+}

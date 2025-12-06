@@ -39,7 +39,6 @@ export default defineNuxtConfig({
 		compilerOptions: {
 			isCustomElement: tag => ["custom-element"].includes(tag),
 		},
-		// Enable more detailed hydration warnings
 	},
 
 	colorMode: {

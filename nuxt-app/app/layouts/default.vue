@@ -2,6 +2,8 @@
 	<UApp>
 		<NuxtRouteAnnouncer />
 
+		<SpeedInsights />
+
 		<!-- Wraps a UHeader  -->
 		<NavigationMenu />
 
@@ -41,6 +43,7 @@
 </template>
 
 <script lang="ts" setup>
+import { SpeedInsights } from "@vercel/speed-insights/nuxt";
 import heroImage from "@/assets/images/cliff_sunset_with_beach.jpg";
 </script>
 

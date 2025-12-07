@@ -49,17 +49,17 @@ export default defineNuxtConfig({
 	compatibilityDate: "2025-07-15",
 
 	nitro: {
-		preset: "netlify-static",
+		preset: "vercel",
 
 	},
 
 	// debug: process.env.NODE_ENV !== "production",
 
-	hooks: {
-		"prerender:routes"({ routes }) {
-			routes.clear(); // Do not generate any routes (except the defaults)
-		},
-	},
+	// hooks: {
+	// 	"prerender:routes"({ routes }) {
+	// 		routes.clear(); // Do not generate any routes (except the defaults)
+	// 	},
+	// },
 
 	eslint: {
 		config: {

@@ -30,10 +30,8 @@ Project is currently being developed as a SPA using Nuxt v4.
 
 Update preset depending on build type
 
-### Current build deployment preset
+### Current nitro build deployment preset
 
 ```bash
-    netlify-static
+    vercel
 ```
-
-MIGHT change to vercel for SSR and server features.

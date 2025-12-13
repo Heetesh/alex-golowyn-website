@@ -78,4 +78,8 @@ export default defineNuxtConfig({
 		},
 		families: [{ name: "Inter", provider: "google" }],
 	},
+
+	image: {
+		provider: "ipx",
+	},
 });

@@ -15,13 +15,25 @@
 			> -->
 
 			<UContainer class="pt-4 grayscale-25 flex items-center justify-center">
-				<img
+				<!-- <img
 					:src="heroImage"
 					class="rounded-2xl object-contain"
 					alt="Home page image or hero image."
 					loading="eager"
 					fetchpriority="high"
-				>
+				> -->
+				<NuxtImg
+					src="/cliff_sunset_with_beach.webp"
+					alt="Home page image or hero image"
+					sizes=""
+					width="3405"
+					height="1228"
+					preload
+					quality="80"
+					provider="ipx"
+					format="webp,avif"
+					class="rounded-2xl object-contain w-full h-full"
+				/>
 			</UContainer>
 
 			<!-- <UContainer class="relative z-10 pt-[15vh]">

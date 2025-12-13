@@ -18,7 +18,7 @@
 				class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
 			>
 				<UPageCard
-					v-for="(card, index) in serviceCards"
+					v-for="(card, index) in useServicesCards()"
 					:key="index"
 					v-bind="card"
 				/>
@@ -137,87 +137,6 @@ const heroLinks = ref<ButtonProps[]>([
 		class: "animate__animated animate__tada",
 	},
 ]);
-
-const serviceCards: PageCardProps[] = [
-	{
-		title: "Alpha Service",
-		description:
-					"Alpha Service is the best service for x action. This text will be update later on.",
-		spotlight: true,
-		spotlightColor: "primary",
-		highlight: true,
-		to: "/services/beta",
-		variant: "subtle",
-		ui: {
-			root: "shadow-lg",
-		},
-	},
-	{
-		title: "Beta Service",
-		description:
-					"Alpha Service is the best service for x action. This text will be update later on.",
-		spotlight: true,
-		spotlightColor: "primary",
-		highlight: true,
-		to: "/services/beta",
-		variant: "subtle",
-		ui: {
-			root: "shadow-lg",
-		},
-	},
-	{
-		title: "Charlie Service",
-		description:
-					"Alpha Service is the best service for x action. This text will be update later on.",
-		spotlight: true,
-		spotlightColor: "primary",
-		highlight: true,
-		to: "/services/beta",
-		variant: "subtle",
-		ui: {
-			root: "shadow-lg",
-		},
-	},
-	{
-		title: "Delta Service",
-		description:
-					"Alpha Service is the best service for x action. This text will be update later on.",
-		spotlight: true,
-		spotlightColor: "primary",
-		highlight: true,
-		to: "/services/beta",
-		variant: "subtle",
-		ui: {
-			root: "shadow-lg",
-		},
-	},
-	{
-		title: "Alpha Service",
-		description:
-					"Alpha Service is the best service for x action. This text will be update later on.",
-		spotlight: true,
-		spotlightColor: "primary",
-		highlight: true,
-		to: "/services/beta",
-		variant: "subtle",
-		ui: {
-			root: "shadow-lg",
-		},
-	},
-	{
-		title: "Beta Service",
-		description:
-					"Alpha Service is the best service for x action. This text will be update later on.",
-		spotlight: true,
-		spotlightColor: "primary",
-		highlight: true,
-		to: "/services/beta",
-		variant: "subtle",
-		ui: {
-			root: "shadow-lg",
-		},
-	},
-];
 
 const reviewsCard: PageCardProps[] = [
 	{

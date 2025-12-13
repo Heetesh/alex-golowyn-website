@@ -22,6 +22,17 @@
 					loading="eager"
 					fetchpriority="high"
 				> -->
+				<!-- <NuxtImg
+					src="/cliff_sunset_with_beach.webp"
+					alt="Home page image or hero image"
+					sizes=""
+					width="3405"
+					height="1228"
+					preload
+					quality="80"
+					format="webp,avif"
+					class="rounded-2xl object-contain w-full h-full"
+				/> -->
 				<NuxtImg
 					src="/cliff_sunset_with_beach.webp"
 					alt="Home page image or hero image"
@@ -30,7 +41,6 @@
 					height="1228"
 					preload
 					quality="80"
-					provider="ipx"
 					format="webp,avif"
 					class="rounded-2xl object-contain w-full h-full"
 				/>

@@ -33,7 +33,7 @@
 					format="webp,avif"
 					class="rounded-2xl object-contain w-full h-full"
 				/> -->
-				<NuxtImg
+				<!-- <NuxtImg
 					src="/cliff_sunset_with_beach.webp"
 					alt="Home page image or hero image"
 					sizes=""
@@ -43,7 +43,7 @@
 					quality="80"
 					format="webp,avif"
 					class="rounded-2xl object-contain w-full h-full"
-				/>
+				/> -->
 			</UContainer>
 
 			<!-- <UContainer class="relative z-10 pt-[15vh]">
@@ -54,29 +54,13 @@
 			</UContainer>
 		</UMain>
 
-		<UFooter>
-			<template #default>
-				<p class="text-muted text-sm">
-					Alex Golowyn © {{ new Date().getFullYear() }}
-				</p>
-			</template>
-			<template #left>
-				<p class="text-muted text-sm">
-					Can add icon or logo here
-				</p>
-			</template>
-
-			<template #right>
-				<p class="text-muted text-sm">
-					Can add icon or logo here
-				</p>
-			</template>
-		</UFooter>
+		<Footer />
 	</UApp>
 </template>
 
 <script lang="ts" setup>
 import heroImage from "@/assets/images/cliff_sunset_with_beach.jpg";
+import Footer from "../components/Navigation/Footer.vue";
 </script>
 
 <style scoped></style>

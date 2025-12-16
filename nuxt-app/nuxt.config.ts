@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
 
 	modules: [
-		"@nuxt/content",
 		"@nuxt/eslint",
 		"@nuxt/hints",
 		"@nuxt/image",
@@ -16,11 +15,15 @@ export default defineNuxtConfig({
 		"@formkit/auto-animate",
 	],
 
-	ssr: false,
+	ssr: true,
 
-	// devtools: {
-	// 	enabled: true,
+	// debug: {
+
 	// },
+
+	devtools: {
+		enabled: true,
+	},
 
 	app: {
 		head: {

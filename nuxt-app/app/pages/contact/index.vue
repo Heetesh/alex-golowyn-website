@@ -5,7 +5,10 @@
 </template>
 
 <script lang="ts" setup>
-
+useHead({
+	title: "Alex Golowyn - Contact",
+	meta: [],
+});
 </script>
 
 <style scoped></style>

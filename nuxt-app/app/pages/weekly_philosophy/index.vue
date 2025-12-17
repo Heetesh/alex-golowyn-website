@@ -106,8 +106,11 @@
 	</div>
 </template>
 
-<script lang="ts">
-export default {};
+<script lang="ts" setup>
+useHead({
+	title: "Alex Golowyn - Weekly Philosophy",
+	meta: [],
+});
 </script>
 
 <style scoped></style>

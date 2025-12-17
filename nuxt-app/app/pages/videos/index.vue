@@ -14,6 +14,7 @@
 				value-key="value"
 				:items="youtubeSelectIdItems"
 				highlight
+				size="lg"
 				variant="subtle"
 				:ui="{
 					trailingIcon: 'group-data-[state=open]:rotate-180 transition-transform duration-200',
@@ -35,7 +36,11 @@
 	</div>
 </template>
 
-<script setup lang="ts">
+<script  lang="ts" setup>
+useHead({
+	title: "Alex Golowyn - Videos",
+	meta: [],
+});
 // KISS on youtube embed.
 // Have a select that toggle the youtube video id
 // On toggle change, change the youtube id dynamically

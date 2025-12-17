@@ -5,8 +5,11 @@
 	</UPage>
 </template>
 
-<script lang="ts">
-export default {};
+<script lang="ts" setup>
+useHead({
+	title: "Alex Golowyn - Donations",
+	meta: [],
+});
 </script>
 
 <style scoped></style>

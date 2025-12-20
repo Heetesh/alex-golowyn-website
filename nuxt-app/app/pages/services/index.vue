@@ -20,11 +20,12 @@
 	</div>
 </template>
 
-<script  setup lang="ts">
+<script lang="ts" setup>
 useHead({
 	title: "Alex Golowyn - Services",
 	meta: [],
 });
+
 const servicesCard = useServicesCards();
 </script>
 

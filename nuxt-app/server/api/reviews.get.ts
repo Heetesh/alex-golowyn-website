@@ -1,7 +1,6 @@
 // We get reviews from database when db is up and return to user
 
 import { reviewSchema } from "@@/types/reviews";
-// import { reviewSchema } from "../../types/reviews";
 
 import type { Review } from "@@/types/reviews";
 import { z } from "zod";
@@ -44,7 +43,7 @@ export default defineEventHandler((_event): Review[] => {
 			name: "I went from feeling stuck to building momentum toward my goals.",
 			description: "Kevin O'Brien",
 		},
-	];
+	] as Review[];
 
 	return z.array(reviewSchema).parse(reviews);
 });

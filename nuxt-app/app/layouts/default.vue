@@ -50,7 +50,7 @@
 				<slot />
 			</UContainer> -->
 			<UContainer class="relative z-2">
-				<slot />
+				<slot></slot>
 			</UContainer>
 		</UMain>
 
@@ -59,7 +59,7 @@
 </template>
 
 <script lang="ts" setup>
-import heroImage from "@/assets/images/cliff_sunset_with_beach.jpg";
+// import heroImage from "@/assets/images/cliff_sunset_with_beach.jpg";
 import Footer from "../components/Navigation/Footer.vue";
 </script>
 

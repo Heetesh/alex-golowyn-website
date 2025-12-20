@@ -15,11 +15,9 @@ export default defineNuxtConfig({
 		"@formkit/auto-animate",
 	],
 
+	// The initial strategy was to render this as a SPA but SSR makes sense.
+	// This project will be uploaded to vercel which offers first class SSR support.
 	ssr: true,
-
-	// debug: {
-
-	// },
 
 	devtools: {
 		enabled: true,
@@ -27,24 +25,18 @@ export default defineNuxtConfig({
 
 	app: {
 		head: {
+			title: "Alex Golowyn", // default fallback title
 			link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
-			titleTemplate: "%s",
-			meta: [
-				{ name: "viewport", content: "width=device-width, initial-scale=1" },
-				{ name: "charset", content: "utf-8" },
-			],
+
 		},
 	},
 
 	css: ["~/assets/css/main.css"],
 
-	vue: {
-		compilerOptions: {
-			isCustomElement: tag => ["custom-element"].includes(tag),
-		},
-	},
-
 	colorMode: {
+		// Colour mode will always be light as per client preference
+		// TODO: Consider not forcing light mode but rather have the same colour palettes for light & dark
+		// FOR NOW = keeping forced light mode
 		preference: "light",
 	},
 
@@ -56,12 +48,6 @@ export default defineNuxtConfig({
 	},
 
 	// debug: process.env.NODE_ENV !== "production",
-
-	// hooks: {
-	// 	"prerender:routes"({ routes }) {
-	// 		routes.clear(); // Do not generate any routes (except the defaults)
-	// 	},
-	// },
 
 	eslint: {
 		config: {
@@ -84,6 +70,5 @@ export default defineNuxtConfig({
 
 	image: {
 		provider: "ipx",
-
 	},
 });
